@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equivv = "X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./paint.js" defer></script> <!--burada defer tüm html dosyaları yüklensin en son js çalışsın demek. defer(erteleme)-->
+    </head>
+    <body>
+
+        <div class="mainWrapper">
+            <div class="toolbarWrapper">
+                <ul class="tool_options">
+                    <li class="options" id="cember">Cember</li>
+                    <li class="options" id="fillCember">FillCember</li>
+                    <li class="options" id="ucgen">Ucgen</li>
+                    <li class="options" id="fillUcgen">FillUcgen</li>
+                    <li class="options" id="kare">Kare</li>
+                    <li class="options" id="fillKare">FillKare</li>
+                    <li class="options active" id="firca">Firca</li>
+                    <li class="options" id="fircaBoyu">
+                        <select id="selectOption">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="18">18</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+
+                        </select>
+                    </li>
+                    <li class="options" id="getColor">
+                        <input type="color" id="optionColor"/>
+                    </li>
+                    <li class="options" id="silgi">Silgi</li>
+                    <li class="options" id="reset">Reset</li>
+                    <li class="options" id="fillRect">Fill</li>
+                    
+                </ul>
+            </div>
+            <div class="canvasWrapper"> 
+                <canvas id ="canvas"></canvas>
+            </div>
+        </div>
+
+        <!--Bu kısım x ile y yi takip edeceğimiz kısım-->
+<div class ="toolbarWrapperAxis">
+
+        <div class="Axis"> 
+            <div>offsetX = <span id ="xAxis" class="xyAxis">0</span></div>
+            <div>offsetY = <span id ="yAxis" class="xyAxis">0</span></div>
+            <div>(Previous X) startX = <span id ="xAxisstart">0</span></div>
+            <div>(Previous Y) startY = <span id ="yAxisstart">0</span></div>
+
+            <div> clientX = <span id="clientX" class="xyAxis">0</span></div>
+            <div> clientY = <span id="clientY" class="xyAxis">0</span></div>
+
+            <div> Canvas Left = <span id="cleft" class="xyAxis">0</span></div>
+            <div> Canvas Top = <span id="ctop" class="xyAxis">0</span></div>
+
+            <div> (clientX  - Canvas Left) X = <span id="XX" class="xyAxis">0</span></div>
+            <div> (clientY - Canvas Top) Y = <span id="YY" class="xyAxis">0</span></div>
+
+
+
+        </div>
+    </div>
+
+    </body>
+</html>

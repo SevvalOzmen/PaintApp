@@ -1,0 +1,84 @@
+*{
+    margin:0px;
+}
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB4949;
+    height: 100vh;
+}
+
+
+
+.toolbarWrapper{
+    width: 80%;
+    margin: 2px 0px 15px 0px;
+    padding: 5px 0 5px 0;
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.toolbarWrapper ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.toolbarWrapper ul li{
+    background-color: #009dFF;
+    color: white;
+    padding: 6px;
+    margin-right: 5px;
+    border: 1px solid gray;
+    font-weight: bold;
+    cursor: pointer;
+}
+.toolbarWrapper ul li select {
+    width: 100px;
+    padding: 3px ;
+
+}
+.canvasWrapper{
+    border: 0px solid rgb(56,55,141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px; 
+    box-shadow: 2px 2px 2px 0 #fff;
+
+}
+div.canvasWrapper canvas#canvas{
+ /*border: 2px solid rgb(63,216,16);*/
+}
+
+.active{
+    border:3px solid orange !important;
+}
+
+.toolbarWrapperAxis {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.Axis {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.xyAxis {
+    font-weight:
+
